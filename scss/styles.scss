@@ -1,0 +1,743 @@
+
+$colorMarron: #8e5f71;
+$colorRosa:#FFDDDD;
+$colorRosaDos:#D89CB2;
+$colorGris: #636363;
+
+
+
+*{ 
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.titulos{
+    color: #a00782;
+    font-size: 36px;
+    font-family: 'Oleo Script', cursive;
+}
+
+.subtitulos{
+    color: #8e5f71;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 10px;
+    font-size: 18px;
+}
+
+.texto__contenido{
+    font-family: 'Poppins', sans-serif;
+    color:$colorGris;
+}
+
+
+
+/* header */
+.header{
+    padding: 15px;
+    display: flex;
+    background-image: url("../imagenes/fondoBanner.jpg");
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: $colorGris;
+
+    .header__logo{
+        max-width: 50%;
+
+    }
+
+    .header__nav{
+        .nav__lista{
+            list-style: none;
+            display: flex;
+            padding: 20px;
+
+            .nav__item{
+                padding: 10px;
+                font-family: 'Poppins', sans-serif;
+                font-size: 16px;
+                .nav__link{
+                    text-decoration: none;
+                    font-family: 'Poppins', sans-serif;
+                    color: #636363;
+                    &.nav__item--active{
+                       color: #a00782;
+                }
+                }
+            }
+        }
+    }
+}
+
+
+/* banner_index*/
+.banner{
+        padding: 40px;
+        height: 400px;
+        background-color: #FFDDDD;
+        margin-bottom: 10px;
+         
+
+         .banner__titulo{
+            color: rgb(162, 0, 120);
+            font-size: 36px;
+            font-family: 'Oleo Script', cursive;
+            transform: translate(5px, 5px);
+            padding-top: 100px;
+        }
+
+        .banner__subtitulo{
+            color: #8e5f71;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 10px;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+
+        .banner__boton{
+                background-color: #D89CB2;
+                height: 35px;
+                width: 22%;
+                text-align: center;
+                color: white;
+                padding: 5px;
+        }
+
+        .banner__boton:hover{
+            background-color: #8e5f71;
+            color: white;
+        }
+
+        .banner__imagen{
+          padding-block-end: 80px;
+          
+        }
+}
+
+/* index */
+.bienvenida{
+    padding: 70px;
+
+    .bienvenida__imagen{
+
+        padding-block-end: 50px;
+       
+    }
+
+
+    .bienvenida__texto{
+
+        .texto__titulo{
+            color: #a00782;
+            font-size: 36px;
+            font-family: 'Oleo Script', cursive;
+            font-size: 36px;
+            padding-top: 50px;
+        }
+
+        .texto__subtitulo{
+            color: $colorMarron;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 10px;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+
+        .texto__contenido{
+            @extend .texto__contenido
+
+        }
+    }
+
+    .frases__titulos{
+        color: rgb(162, 0, 120);
+        font-size: 36px;
+        font-family: 'Oleo Script', cursive;
+        font-size: 36px;
+        text-align: center;
+        padding-block-start: 70px;
+    }
+
+    .frases__subtitulos{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 10px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        text-align: center;
+        color: $colorGris;
+        line-height: 2px;
+    }
+}
+
+/* footer */
+.footer{
+    background-image: linear-gradient(#fadbdc, #D89CB2);
+    list-style: none;
+    padding: 20px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+    color:$colorGris;
+    
+    .footer__titulos{
+        color: #8e5f71;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+    }
+
+    .footer__link{
+        font-family: 'Poppins', sans-serif;
+        color: #636363;
+        text-decoration: none;
+        line-height: 3px;
+        color:$colorGris;
+    }
+
+    .footer__copy{
+        text-align: center;
+        padding: 15px;
+        color:$colorGris;
+    }
+}
+
+
+
+/* sobre mi */
+.bienvenidaServicios{
+
+    padding: 100px 40px 100px 40px;
+
+    .texto__titulo{
+        color: #a00782;
+        font-size: 36px;
+        font-family: 'Oleo Script', cursive;
+        font-size: 36px;
+        padding-top: 50px;
+    }
+
+    .texto__subtitulo{
+        color: $colorMarron;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 10px;
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    .texto__contenido{
+        @extend .texto__contenido
+
+    }
+}
+
+.sobreMi{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 10px 40px 100px 40px;
+    flex-wrap: wrap;
+    color:$colorGris;
+
+    .sobreMi__item1{
+        align-content: center;
+        display: inline-block;
+        text-align: center;
+
+        .item1__subtitulos{
+            color: #8e5f71;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 10px;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+    }
+
+    .sobreMi__item2{
+        align-content: center;
+        display: inline-block;
+        text-align: center;
+
+        .item2__subtitulos{
+            color: #8e5f71;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 10px;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+    }
+
+    .sobreMi__item3{
+        align-content: center;
+        display: inline-block;
+        text-align: center;
+        height: 30%;
+
+        .item3__subtitulos{
+            color: #8e5f71;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 10px;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+
+.datos{
+    display: flex;
+    justify-content:left;
+    flex-direction: row;
+    background-color: #F1C6C7;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    line-height: 20px;
+
+    .datos__item1{
+        align-content: center;
+        display: inline-block;
+        text-align: left;
+        padding-top: 40px;
+        width: 400px;
+
+        .item1__titulos{
+            color: #a00782;
+            font-family: 'Oleo Script', cursive;
+            font-size: 36px;
+            text-align: left;
+            line-height: 40px;
+        }
+
+        .item1__subtitulos{
+            color: #8e5f71;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 10px;
+            font-size: 18px;
+            text-align: left;
+        }
+
+    }
+
+    .datos__item2{
+        align-content: center;
+        display: inline-block;
+        text-align: center;
+        
+        .item2__preguntas{
+            color: #8e5f71;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            font-size: 15px;
+            text-align: left;
+        }
+
+        .item2__respuestas{
+            font-family: 'Poppins', sans-serif;
+            color: rgb(135, 135, 135);
+            font-size: 15px;
+            font-style: italic;
+            text-decoration: underline;
+            text-align: left;
+        }
+
+
+    }
+
+    .datos__item3{
+        align-content: center;
+        display: inline-block;
+        text-align: center;
+
+        .item3__preguntas{
+            color: #8e5f71;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            font-size: 15px;
+            text-align: left;
+        }
+
+        .item3__respuestas{
+            font-family: 'Poppins', sans-serif;
+            color: rgb(135, 135, 135);
+            font-size: 15px;
+            font-style: italic;
+            text-decoration: underline;
+            text-align: left;
+        }
+
+    }
+
+    
+}
+
+.habilidades{
+    padding: 70px;
+    
+
+    .habilidades__titulos{
+        color: #a00782;
+        font-family: 'Oleo Script', cursive;
+        font-size: 28px;
+        text-align: center;
+    }
+
+}
+
+.tabla{
+    .titulosTabla{
+        color: #a00782;
+        font-family: 'Oleo Script', cursive;
+        font-size: 27px;
+        text-align: left;
+        height: 20px;
+        text-align: center;
+    }
+
+    .respuestasTabla{
+        color: $colorGris;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 10px;
+        font-size: 16px;
+        text-align: center;
+        padding: 15px;
+    }
+}
+
+
+/* sevicios */
+
+.intro{
+    padding: 50px;
+    .intro__titulo{
+        @extend .titulos;
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .intro__subtitulo{
+        @extend .subtitulos;
+        text-align: center;
+        line-height: 2px;
+    }
+
+}
+
+.servicios{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 50px;
+    flex-wrap: wrap;
+
+        .servicios__item1{
+            color: $colorMarron;
+            align-content: center;
+            display: inline-block;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 10px;
+            font-size: 18px;
+            letter-spacing: 1px;
+
+        }
+
+        .servicios__item2{
+            @extend .servicios__item1
+
+        }
+
+        .servicios__item3{
+            @extend .servicios__item1
+        }
+
+        .servicios__item4{
+            @extend .servicios__item1
+        }
+}
+
+.branding{
+    .branding__titulosServicios{
+        @extend .titulos
+    
+
+    }
+}
+
+
+
+
+
+@mixin serviciosDisenio ($colorFondo, $altoCaja, $colorLetra){
+    padding: $altoCaja;
+    padding-block-end: 70px;
+    background-color: $colorFondo;
+    font-family: 'Poppins', sans-serif;
+    color:$colorLetra;
+}
+
+#branding{
+    @include serviciosDisenio(white, 90px 90px 90px 90px, $colorGris)
+
+    .branding__titulosServicios{
+        @extend .titulos
+    }
+}
+
+#grafico{
+    @include serviciosDisenio($colorRosa, 70px 90px 90px 90px, $colorGris)
+
+    .grafico__titulosServicios{
+        @extend .titulos
+    }
+}
+
+#web{
+    @include serviciosDisenio(white, 70px 90px 90px 90px, $colorGris)
+
+    .web__titulosServicios{
+        @extend .titulos
+    }
+}
+
+#redes{
+    @include serviciosDisenio($colorRosa, 70px 90px 90px 90px, $colorGris)
+
+    .redes__titulosServicios{
+        @extend .titulos
+    }
+}
+
+.frase{
+    padding: 70px 20px 70px 20px ;
+    .frases__titulos{
+        text-align: center;
+    }
+    .frases__subtitulos{
+        text-align: center;
+    }
+}
+
+/* trabajos*/
+
+.introTrabajos{
+    padding: 50px;
+    text-align: center;
+
+}
+
+#grillaTrabajos{
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 400px 400px;
+    height: 900px;
+    grid-template-areas: "koahPortada koah koah2"
+                         "koahPortada koah3 koah4"; 
+    column-gap: 20px;
+    row-gap: 20px;          
+    padding: 40px;                                         
+}
+
+#koahPortada{
+    grid-area: koahPortada;
+}
+
+#koahPortada:hover{
+    transform: translate(1px,-15px);
+}
+
+.img{
+    max-width: 100%
+}
+
+#koah{
+    grid-area: koah;
+    max-width: 100%;
+    height: auto;
+}
+
+#koah:hover{
+    transform: translate(1px,-15px);
+}
+
+#koah2{
+    grid-area: koah2;
+    max-width: 100%;
+    height: auto;
+}
+
+#koah2:hover{
+    transform: translate(1px,-15px);
+}
+
+
+#koah3{
+    grid-area: koah3;
+    max-width: 100%;
+    height: auto;
+}
+
+#koah3:hover{
+    transform: translate(1px,-15px);
+}
+
+#koah4{
+    grid-area: koah4;
+    max-width: 100%;
+    height: auto;
+}
+
+#koah4:hover{
+    transform: translate(1px,-15px);
+}
+
+
+/* Contacto*/
+
+.bannerContacto{
+    padding: 40px;
+    padding-top: 40px;
+    height: 200px;
+    background-color: #FFDDDD;
+}
+
+.caja{
+    display: inline-block;
+    width: 400px;
+    padding: 40px;
+    @extend .texto__contenido
+}
+
+.contacto{
+    padding: 70px;
+    display: flex;
+
+    .caja{
+        display: inline-block;
+        width: 400px;
+        padding: 40px;
+    }
+ 
+    .caja2{
+        display: inline-block;
+        width: 400px;
+        padding: 40px;
+    }    
+
+    .contacto__info{
+        
+    }
+
+    .contacto__formulario{
+        background-color: $colorRosa;
+    }
+
+    input{
+        transition: all 2s;
+        width: 300px;
+    
+    }
+    
+    input:focus{
+        width: 300px;
+        background-color: #f8e3e3;
+    }
+    
+
+
+}
+
+
+
+
+/* Responsive*/
+
+@media only screen and (max-width:600px){
+
+
+    #grilla{
+        display:grid;
+        height: 2000px;
+        grid-template-columns: 100% ;
+        grid-template-rows: 15% 1% 70% 30%;
+        grid-template-areas: "header"
+                             "menu"
+                             "contenido"
+                             "footer";
+    }
+        .header{
+            grid-area: header;
+        }
+
+        .header__nav{
+            grid-area: menu;
+            justify-content: end;
+            flex-direction: row;
+        }
+
+
+        .footer{
+            grid-area: footer;
+            background-color:$colorRosaDos;
+        }
+
+        .nav__lista{
+            flex-direction: row;
+            height: 100%;
+            list-style-type: none;
+            justify-content: end;
+            justify-items: end;
+        }
+
+
+    }
+
+
+
+    
+    @media only screen and (min-width:600px){
+
+
+        #grilla{
+            display:grid;
+            height: 1500px;
+            grid-template-columns: 100% ;
+            grid-template-rows: 10%  70% 30%;
+            grid-template-areas: "header"
+                                 "contenido"
+                                 "footer";
+        }
+            .header{
+                grid-area: header;
+                background-color: $colorGris;
+            }
+
+            .header__nav{
+                grid-area: menu;
+                justify-content: end;
+            }
+
+            main{
+                grid-area: contenido;
+            }
+
+            .footer{
+                grid-area: footer;
+                background-color:$colorRosaDos;
+            }
+
+            .nav__lista{
+                flex-direction: row;
+                height: 100%;
+                list-style-type: none;
+                justify-content: end;
+                justify-items: end;
+            }
+
+
+        }
+ 
