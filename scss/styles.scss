@@ -527,18 +527,19 @@ $colorGris: #636363;
 .introTrabajos{
     padding: 50px;
     text-align: center;
-
+    padding-top: 90px;
 }
+
 
 #grillaTrabajos{
     display: grid;
-    grid-template-columns: 20% 40% 40%;
-    grid-template-rows: 400px 400px;
-    height: 900px;
+    grid-template-columns: 1fr 40% 40%;
+    grid-template-rows: 200px 200px;
     grid-template-areas: "koahPortada koah koah2"
                          "koahPortada koah3 koah4"; 
     column-gap: 20px;
-    row-gap: 20px;          
+    row-gap: 20px; 
+    justify-items: center;         
     padding: 40px;                                         
 }
 
@@ -605,32 +606,13 @@ $colorGris: #636363;
     background-color: #FFDDDD;
 }
 
-.caja{
-    display: inline-block;
-    width: 400px;
-    padding: 40px;
-    @extend .texto__contenido
+.contacto__intro{
+    padding: 70px;
+    font-family: 'Poppins', sans-serif;
+    
 }
 
-.contacto{
-    padding: 70px;
-    display: flex;
 
-    .caja{
-        display: inline-block;
-        width: 400px;
-        padding: 40px;
-    }
- 
-    .caja2{
-        display: inline-block;
-        width: 400px;
-        padding: 40px;
-    }    
-
-    .contacto__info{
-        
-    }
 
     .contacto__formulario{
         background-color: $colorRosa;
@@ -647,9 +629,6 @@ $colorGris: #636363;
         background-color: #f8e3e3;
     }
     
-
-
-}
 
 
 

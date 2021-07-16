@@ -14,7 +14,7 @@
   font-weight: 10px;
   font-size: 18px; }
 
-.texto__contenido, .bienvenida .bienvenida__texto .texto__contenido, .bienvenidaServicios .texto__contenido, .caja {
+.texto__contenido, .bienvenida .bienvenida__texto .texto__contenido, .bienvenidaServicios .texto__contenido {
   font-family: 'Poppins', sans-serif;
   color: #636363; }
 
@@ -342,16 +342,17 @@
 /* trabajos*/
 .introTrabajos {
   padding: 50px;
-  text-align: center; }
+  text-align: center;
+  padding-top: 90px; }
 
 #grillaTrabajos {
   display: grid;
-  grid-template-columns: 20% 40% 40%;
-  grid-template-rows: 400px 400px;
-  height: 900px;
+  grid-template-columns: 1fr 40% 40%;
+  grid-template-rows: 200px 200px;
   grid-template-areas: "koahPortada koah koah2" "koahPortada koah3 koah4";
   column-gap: 20px;
   row-gap: 20px;
+  justify-items: center;
   padding: 40px; }
 
 #koahPortada {
@@ -402,30 +403,20 @@
   height: 200px;
   background-color: #FFDDDD; }
 
-.caja {
-  display: inline-block;
-  width: 400px;
-  padding: 40px; }
-
-.contacto {
+.contacto__intro {
   padding: 70px;
-  display: flex; }
-  .contacto .caja {
-    display: inline-block;
-    width: 400px;
-    padding: 40px; }
-  .contacto .caja2 {
-    display: inline-block;
-    width: 400px;
-    padding: 40px; }
-  .contacto .contacto__formulario {
-    background-color: #FFDDDD; }
-  .contacto input {
-    transition: all 2s;
-    width: 300px; }
-  .contacto input:focus {
-    width: 300px;
-    background-color: #f8e3e3; }
+  font-family: 'Poppins', sans-serif; }
+
+.contacto__formulario {
+  background-color: #FFDDDD; }
+
+input {
+  transition: all 2s;
+  width: 300px; }
+
+input:focus {
+  width: 300px;
+  background-color: #f8e3e3; }
 
 /* Responsive*/
 @media only screen and (max-width: 600px) {
