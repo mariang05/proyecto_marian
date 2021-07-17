@@ -422,7 +422,6 @@ $colorGris: #636363;
     .intro__subtitulo{
         @extend .subtitulos;
         text-align: center;
-        line-height: 2px;
     }
 
 }
@@ -619,65 +618,51 @@ $colorGris: #636363;
     }
 
     input{
-        transition: all 5s;
-        width: 300px;
-    
+        padding: 5px;
+        margin: 5px;
+        width: 500px;
     }
-    
-    input:focus{
-        width: 300px;
-        background-color: #f8e3e3;
+
+    textarea{
+        width: 500px;
     }
-    
-
-
 
 
 /* Responsive*/
 
-@media only screen and (max-width:600px){
+ /*tablets*/
 
-
-    #grilla{
-        display:grid;
-        height: 2000px;
-        grid-template-columns: 100% ;
-        grid-template-rows: 15% 1% 70% 30%;
-        grid-template-areas: "header"
-                             "menu"
-                             "contenido"
-                             "footer";
-    }
-        .header{
-            grid-area: header;
+    /*extra small divices celulares*/
+    @media only screen and ( max-width:600px){
+        #grilla{
+            display:grid;
+            grid-template-columns: 100%;
+            grid-template-areas: "header"
+                                 "contenido"
+                                 "footer";
         }
+            .header{
+                grid-area: header;
+                background-color: $colorGris;
+                flex-direction: column;
+                list-style-type: none;
+            }
 
-        .header__nav{
-            grid-area: menu;
-            justify-content: end;
-            flex-direction: row;
-        }
+            main{
+                grid-area: contenido;
 
+            }
 
-        .footer{
-            grid-area: footer;
-            background-color:$colorRosaDos;
-        }
-
-        .nav__lista{
-            flex-direction: row;
-            height: 100%;
-            list-style-type: none;
-            justify-content: end;
-            justify-items: end;
-        }
-
-
+            .footer{
+                grid-area: footer;
+                background-color:$colorRosaDos;
+            }
+   
     }
 
 
 
-    
+    /*tablets*/ 
     @media only screen and (min-width:600px){
 
 
@@ -705,14 +690,4 @@ $colorGris: #636363;
                 background-color:$colorRosaDos;
             }
 
-            .nav__lista{
-                flex-direction: row;
-                height: 100%;
-                list-style-type: none;
-                justify-content: end;
-                justify-items: end;
-            }
-
-
-        }
- 
+    }
