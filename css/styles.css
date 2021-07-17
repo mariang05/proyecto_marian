@@ -14,7 +14,7 @@
   font-weight: 10px;
   font-size: 18px; }
 
-.texto__contenido, .bienvenida .bienvenida__texto .texto__contenido, .bienvenidaServicios .texto__contenido {
+.texto__contenido, .bienvenida .bienvenida__texto .texto__contenido, .sobreMiIntro .texto__contenido {
   font-family: 'Poppins', sans-serif;
   color: #636363; }
 
@@ -47,7 +47,6 @@
 /* banner_index*/
 .banner {
   padding: 40px;
-  height: 400px;
   background-color: #FFDDDD;
   margin-bottom: 10px; }
   .banner .banner__titulo {
@@ -135,15 +134,15 @@
     color: #636363; }
 
 /* sobre mi */
-.bienvenidaServicios {
+.sobreMiIntro {
   padding: 100px 40px 100px 40px; }
-  .bienvenidaServicios .texto__titulo {
+  .sobreMiIntro .texto__titulo {
     color: #a00782;
     font-size: 36px;
     font-family: 'Oleo Script', cursive;
     font-size: 36px;
     padding-top: 50px; }
-  .bienvenidaServicios .texto__subtitulo {
+  .sobreMiIntro .texto__subtitulo {
     color: #8e5f71;
     font-family: 'Poppins', sans-serif;
     font-weight: 10px;
@@ -195,17 +194,16 @@
   justify-content: left;
   flex-direction: row;
   background-color: #F1C6C7;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  padding-top: 70px;
-  padding-bottom: 70px;
-  line-height: 20px; }
+  line-height: 20px;
+  padding: 30px 30px 70px 70px;
+  height: 400px;
+  padding-top: 70px; }
   .datos .datos__item1 {
-    align-content: center;
-    display: inline-block;
     text-align: left;
     padding-top: 40px;
-    width: 400px; }
+    width: 500px; }
     .datos .datos__item1 .item1__titulos {
       color: #a00782;
       font-family: 'Oleo Script', cursive;
@@ -219,9 +217,10 @@
       font-size: 18px;
       text-align: left; }
   .datos .datos__item2 {
-    align-content: center;
+    align-items: initial;
     display: inline-block;
-    text-align: center; }
+    text-align: left;
+    width: 300px; }
     .datos .datos__item2 .item2__preguntas {
       color: #8e5f71;
       font-family: 'Poppins', sans-serif;
@@ -236,9 +235,10 @@
       text-decoration: underline;
       text-align: left; }
   .datos .datos__item3 {
-    align-content: center;
-    display: inline-block;
-    text-align: center; }
+    align-content: flex-end;
+    align-items: initial;
+    text-align: left;
+    width: 300px; }
     .datos .datos__item3 .item3__preguntas {
       color: #8e5f71;
       font-family: 'Poppins', sans-serif;
@@ -302,7 +302,9 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 10px;
     font-size: 18px;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    width: 300px;
+    padding-top: 20px; }
 
 #branding {
   padding: 90px 90px 90px 90px;
@@ -408,10 +410,11 @@
   font-family: 'Poppins', sans-serif; }
 
 .contacto__formulario {
-  background-color: #FFDDDD; }
+  background-color: #FFDDDD;
+  padding: 30px; }
 
 input {
-  transition: all 2s;
+  transition: all 5s;
   width: 300px; }
 
 input:focus {
@@ -445,16 +448,11 @@ input:focus {
 @media only screen and (min-width: 600px) {
   #grilla {
     display: grid;
-    height: 1500px;
     grid-template-columns: 100%;
-    grid-template-rows: 10%  70% 30%;
     grid-template-areas: "header" "contenido" "footer"; }
   .header {
     grid-area: header;
     background-color: #636363; }
-  .header__nav {
-    grid-area: menu;
-    justify-content: end; }
   main {
     grid-area: contenido; }
   .footer {
