@@ -61,7 +61,7 @@
 
             <form action="#"  method="POST">
 
-            <label for="Nombre">Nombre</label>   
+            <label for="Nombre">Nombre*</label>   
             <input type="text" placeholder="Ingrese su nombre" id="Nombre">
             <br>
 
@@ -69,16 +69,16 @@
             <input type="text" placeholder="Ingrese su apellido" id="Apellido">
             <br>
 
-            <label for="email">Email</label>
+            <label for="email">Email*</label>
             <input type="email" placeholder="Ingrese su email" name="email" id="email">
             <br>
 
-            <label for="telefono">Teléfono</label>
+            <label for="telefono">Teléfono*</label>
             <input type="tel" placeholder="Ingrese su número " name="telefono" id="telefono">
             <br>
 
 
-            <label for="tipoDeProyecto">Elige un proyecto</label>
+            <label for="tipoDeProyecto">Elige un proyecto*</label>
                 <select name="" id="tipodeproyecto">
                     <option value="Marketing digital">Marketing digital</option>
                     <option value="Diseño web">Diseño web</option>
@@ -88,9 +88,12 @@
                 </select>
                 <br>
 
-                <p> Descripción del proyecto</p>
-                <textarea name="Descripción del proyecto" id="" cols="20" rows="5"></textarea>
+
+                <label for="mensaje">Mensaje*</label>
+                <textarea name="descripcionProyecto" placeholder="Describe tu proyecto..."></textarea> 
+              </p>  
                 <br>
+              
 
             <div class="">   
                     <!-- Button trigger modal -->
@@ -119,6 +122,7 @@
             </div>       
 
           </form>
+
         </section>
     </section>
 
@@ -149,7 +153,7 @@
                 <a href="https://www.linkedin.com/in/mariangelica-estrano/"><img src="../imagenes/iconoBehance.png" alt="linkedin"></a>
                 <a href="https://api.whatsapp.com/send/?text=Hola+quisiera+consultar+sobre+&phone=5491122618281"><img src="../imagenes/iconoWhastapp.png"></a>
                 <p class="titulosFooter">Suscribirse al Newsletter </p>
-                <input type="email" name="" id="">
+                <input class="footer__botonSuscribir" type="email" name="" id="">
             </div>
           </div>
        

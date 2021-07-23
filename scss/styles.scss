@@ -200,6 +200,19 @@ $colorGris: #636363;
         padding: 15px;
         color:$colorGris;
     }
+
+    .botonSuscribir{
+        width: 25px; 
+        width: 25px; 
+        height: 40px; 
+        border-radius: 5px;  
+        border-style: solid; 
+        border-width: 1px; 
+        border-color: #ab4493; 
+        margin-top: 10px;  
+        padding-left: 10px;
+        margin-bottom: 20px; 
+    }
 }
 
 
@@ -605,7 +618,7 @@ $colorGris: #636363;
 .contacto__intro{
     padding: 70px;
     font-family: 'Poppins', sans-serif;
-    
+    width: 705px;
 }
 
 
@@ -613,6 +626,12 @@ $colorGris: #636363;
     .contacto__formulario{
         background-color: $colorRosa;
         padding: 30px;
+        width: 800px; 
+        height: auto;
+        margin: 80px auto;
+        padding-top: 30px;
+        padding-bottom: 20px;  
+        padding-left: 30px; 
     }
 
     input{
@@ -620,6 +639,78 @@ $colorGris: #636363;
         margin: 5px;
         width: 100%;
     }
+      
+      
+      input{
+        width: 705px; 
+        height: 40px; 
+        border-radius: 5px;  
+        border-style: solid; 
+        border-width: 1px; 
+        border-color: #ab4493; 
+        margin-top: 10px;  
+        padding-left: 10px;
+        margin-bottom: 20px; 
+      }
+      
+      
+      textarea{
+        width: 705px; 
+        height: 150px; 
+        border-radius: 5px;  
+        border-style: solid; 
+        border-width: 1px; 
+        border-color: #ab4493; 
+        margin-top: 10px;  
+        padding-left: 10px;
+        margin-bottom: 20px; 
+        padding-top: 15px; 
+      }
+      
+      
+      label{
+        display: block; 
+        padding-top: 5px;
+      }
+      
+      
+      button{
+        height: 45px; 
+        padding-left: 5px;
+        padding-right: 5px;   
+        margin-bottom: 20px; 
+        margin-top: 10px;   
+        border-radius: 10px;  
+        width: 705px;   
+      }
+      
+      
+      button p{
+        color: #fff; 
+      }
+      
+
+      
+      
+      
+      h3{
+        font-size: 16px; 
+        padding-bottom: 30px;
+        color: #0e0e0e;   
+      }
+      
+      
+      
+      .formulario input:focus{
+        outline:0;
+        border: 1px solid #97d848;
+      }
+      
+      
+      .formulario textarea:focus{
+        outline:0;
+        border: 1px solid #97d848;
+      }
 
 
 
