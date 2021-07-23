@@ -166,7 +166,6 @@ $colorGris: #636363;
         letter-spacing: 1px;
         text-align: center;
         color: $colorGris;
-        line-height: 2px;
     }
 }
 
@@ -210,7 +209,7 @@ $colorGris: #636363;
 
     padding: 100px 40px 100px 40px;
 
-    .texto__titulo{
+    .sobreMiIntro__titulo{
         color: #a00782;
         font-size: 36px;
         font-family: 'Oleo Script', cursive;
@@ -218,7 +217,7 @@ $colorGris: #636363;
         padding-top: 50px;
     }
 
-    .texto__subtitulo{
+    .sobreMiIntro__subtitulo{
         color: $colorMarron;
         font-family: 'Poppins', sans-serif;
         font-weight: 10px;
@@ -226,7 +225,7 @@ $colorGris: #636363;
         letter-spacing: 1px;
     }
 
-    .texto__contenido{
+    .sobreMiIntro__contenido{
         @extend .texto__contenido
 
     }
@@ -295,7 +294,6 @@ $colorGris: #636363;
     flex-wrap: wrap;
     line-height: 20px;
     padding: 30px 30px 70px 70px;
-    height: 400px;
     padding-top: 70px;
 
     .datos__item1{
@@ -389,7 +387,7 @@ $colorGris: #636363;
 }
 
 .tabla{
-    .titulosTabla{
+    .tabla__titulosTabla{
         color: #a00782;
         font-family: 'Oleo Script', cursive;
         font-size: 27px;
@@ -398,7 +396,7 @@ $colorGris: #636363;
         text-align: center;
     }
 
-    .respuestasTabla{
+    .tabla__respuestasTabla{
         color: $colorGris;
         font-family: 'Poppins', sans-serif;
         font-weight: 10px;
@@ -620,17 +618,15 @@ $colorGris: #636363;
     input{
         padding: 5px;
         margin: 5px;
-        width: 500px;
+        width: 100%;
     }
 
-    textarea{
-        width: 500px;
-    }
+
+
 
 
 /* Responsive*/
 
- /*tablets*/
 
     /*extra small divices celulares*/
     @media only screen and ( max-width:600px){
@@ -638,24 +634,28 @@ $colorGris: #636363;
             display:grid;
             grid-template-columns: 100%;
             grid-template-areas: "header"
+                                  "nav"
                                  "contenido"
                                  "footer";
         }
             .header{
                 grid-area: header;
                 background-color: $colorGris;
-                flex-direction: column;
-                list-style-type: none;
+                flex-grow: initial;
             }
 
             main{
                 grid-area: contenido;
-
             }
 
             .footer{
                 grid-area: footer;
                 background-color:$colorRosaDos;
+            }
+
+            .nav__item{
+                grid-area: nav;
+                flex-direction: row;
             }
    
     }

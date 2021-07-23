@@ -14,7 +14,7 @@
   font-weight: 10px;
   font-size: 18px; }
 
-.texto__contenido, .bienvenida .bienvenida__texto .texto__contenido, .sobreMiIntro .texto__contenido {
+.texto__contenido, .bienvenida .bienvenida__texto .texto__contenido, .sobreMiIntro .sobreMiIntro__contenido {
   font-family: 'Poppins', sans-serif;
   color: #636363; }
 
@@ -104,8 +104,7 @@
     font-size: 20px;
     letter-spacing: 1px;
     text-align: center;
-    color: #636363;
-    line-height: 2px; }
+    color: #636363; }
 
 /* footer */
 .footer {
@@ -136,13 +135,13 @@
 /* sobre mi */
 .sobreMiIntro {
   padding: 100px 40px 100px 40px; }
-  .sobreMiIntro .texto__titulo {
+  .sobreMiIntro .sobreMiIntro__titulo {
     color: #a00782;
     font-size: 36px;
     font-family: 'Oleo Script', cursive;
     font-size: 36px;
     padding-top: 50px; }
-  .sobreMiIntro .texto__subtitulo {
+  .sobreMiIntro .sobreMiIntro__subtitulo {
     color: #8e5f71;
     font-family: 'Poppins', sans-serif;
     font-weight: 10px;
@@ -198,7 +197,6 @@
   flex-wrap: wrap;
   line-height: 20px;
   padding: 30px 30px 70px 70px;
-  height: 400px;
   padding-top: 70px; }
   .datos .datos__item1 {
     text-align: left;
@@ -261,7 +259,7 @@
     font-size: 28px;
     text-align: center; }
 
-.tabla .titulosTabla {
+.tabla .tabla__titulosTabla {
   color: #a00782;
   font-family: 'Oleo Script', cursive;
   font-size: 27px;
@@ -269,7 +267,7 @@
   height: 20px;
   text-align: center; }
 
-.tabla .respuestasTabla {
+.tabla .tabla__respuestasTabla {
   color: #636363;
   font-family: 'Poppins', sans-serif;
   font-weight: 10px;
@@ -415,29 +413,27 @@
 input {
   padding: 5px;
   margin: 5px;
-  width: 500px; }
-
-textarea {
-  width: 500px; }
+  width: 100%; }
 
 /* Responsive*/
-/*tablets*/
 /*extra small divices celulares*/
 @media only screen and (max-width: 600px) {
   #grilla {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-areas: "header" "contenido" "footer"; }
+    grid-template-areas: "header" "nav" "contenido" "footer"; }
   .header {
     grid-area: header;
     background-color: #636363;
-    flex-direction: column;
-    list-style-type: none; }
+    flex-grow: initial; }
   main {
     grid-area: contenido; }
   .footer {
     grid-area: footer;
-    background-color: #D89CB2; } }
+    background-color: #D89CB2; }
+  .nav__item {
+    grid-area: nav;
+    flex-direction: row; } }
 
 /*tablets*/
 @media only screen and (min-width: 600px) {
