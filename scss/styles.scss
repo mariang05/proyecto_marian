@@ -40,34 +40,41 @@ $colorGris: #636363;
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
-    color: $colorGris;
 
     .header__logo{
         max-width: 50%;
 
     }
 
-    .header__nav{
-        .nav__lista{
+    .header__navbar{
+        .navbar-nav{
             list-style: none;
             display: flex;
             padding: 20px;
+            color: $colorGris;
+            justify-content: space-between;
 
-            .nav__item{
+            .nav-item{
                 padding: 10px;
                 font-family: 'Poppins', sans-serif;
                 font-size: 16px;
-                .nav__link{
+                color: $colorGris;
+
+                .nav-link{
                     text-decoration: none;
                     font-family: 'Poppins', sans-serif;
                     color: #636363;
-                    &.nav__item--active{
+                    &.active{
                        color: #a00782;
                 }
                 }
             }
         }
     }
+}
+
+.active{
+    color: #a00782;
 }
 
 
@@ -673,22 +680,8 @@ $colorGris: #636363;
         padding-top: 5px;
       }
       
-      
-      button{
-        height: 45px; 
-        padding-left: 5px;
-        padding-right: 5px;   
-        margin-bottom: 20px; 
-        margin-top: 10px;   
-        border-radius: 10px;  
-        width: 705px;   
-      }
-      
-      
-      button p{
-        color: #fff; 
-      }
-      
+
+ 
 
       
       

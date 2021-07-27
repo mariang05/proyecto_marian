@@ -25,24 +25,29 @@
   background-image: url("../imagenes/fondoBanner.jpg");
   justify-content: space-between;
   flex-wrap: wrap;
-  flex-direction: row;
-  color: #636363; }
+  flex-direction: row; }
   .header .header__logo {
     max-width: 50%; }
-  .header .header__nav .nav__lista {
+  .header .header__navbar .navbar-nav {
     list-style: none;
     display: flex;
-    padding: 20px; }
-    .header .header__nav .nav__lista .nav__item {
+    padding: 20px;
+    color: #636363;
+    justify-content: space-between; }
+    .header .header__navbar .navbar-nav .nav-item {
       padding: 10px;
       font-family: 'Poppins', sans-serif;
-      font-size: 16px; }
-      .header .header__nav .nav__lista .nav__item .nav__link {
+      font-size: 16px;
+      color: #636363; }
+      .header .header__navbar .navbar-nav .nav-item .nav-link {
         text-decoration: none;
         font-family: 'Poppins', sans-serif;
         color: #636363; }
-        .header .header__nav .nav__lista .nav__item .nav__link.nav__item--active {
+        .header .header__navbar .navbar-nav .nav-item .nav-link.active {
           color: #a00782; }
+
+.active {
+  color: #a00782; }
 
 /* banner_index*/
 .banner {
@@ -459,18 +464,6 @@ textarea {
 label {
   display: block;
   padding-top: 5px; }
-
-button {
-  height: 45px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  border-radius: 10px;
-  width: 705px; }
-
-button p {
-  color: #fff; }
 
 h3 {
   font-size: 16px;
