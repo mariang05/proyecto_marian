@@ -367,7 +367,6 @@ $colorGris: #636363;
     }
 
     .datos__item3{
-        align-content: flex-end;
         align-items: initial;
         text-align: left;
         width: 300px;
@@ -633,8 +632,10 @@ $colorGris: #636363;
 .contacto{
     display: flex;
     justify-content: space-around;
+    align-items: flex-start;
     flex-direction: row;
     padding: 50px;
+    flex-wrap: wrap;
 
     .contacto__info{
         padding: 70px;
@@ -644,7 +645,7 @@ $colorGris: #636363;
         font-size: 18px;
         padding-top: 20px;
         display: inline-block;
-        width: 50%;
+        width: 600px;
 
         .subtitulosContacto{
             color: #8e5f71;
@@ -658,12 +659,12 @@ $colorGris: #636363;
 
     .contacto__formulario{
         background-color: $colorRosa;
-        padding: 30px;
+        padding: 15px;
         padding-top: 30px;
         padding-bottom: 20px;  
         padding-left: 30px; 
         display: inline-block;
-        width: 50%;
+        width: 500px;
     }
 
     input{
