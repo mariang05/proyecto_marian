@@ -497,7 +497,7 @@ $colorGris: #636363;
 }
 
 #branding{
-    @include serviciosDisenio(white, 90px 90px 90px 90px, $colorGris)
+    @include serviciosDisenio(white, 90px 20px 90px 20px, $colorGris)
 
     .branding__titulosServicios{
         @extend .titulos
@@ -505,7 +505,7 @@ $colorGris: #636363;
 }
 
 #grafico{
-    @include serviciosDisenio($colorRosa, 70px 90px 90px 90px, $colorGris)
+    @include serviciosDisenio($colorRosa, 70px 20px 90px 20px, $colorGris)
 
     .grafico__titulosServicios{
         @extend .titulos
@@ -513,7 +513,7 @@ $colorGris: #636363;
 }
 
 #web{
-    @include serviciosDisenio(white, 70px 90px 90px 90px, $colorGris)
+    @include serviciosDisenio(white, 70px 20px 90px 20px, $colorGris)
 
     .web__titulosServicios{
         @extend .titulos
@@ -521,7 +521,7 @@ $colorGris: #636363;
 }
 
 #redes{
-    @include serviciosDisenio($colorRosa, 70px 90px 90px 90px, $colorGris)
+    @include serviciosDisenio($colorRosa, 70px 20px 90px 20px, $colorGris)
 
     .redes__titulosServicios{
         @extend .titulos

@@ -319,28 +319,28 @@
     padding-top: 20px; }
 
 #branding {
-  padding: 90px 90px 90px 90px;
+  padding: 90px 20px 90px 20px;
   padding-block-end: 70px;
   background-color: white;
   font-family: 'Poppins', sans-serif;
   color: #636363; }
 
 #grafico {
-  padding: 70px 90px 90px 90px;
+  padding: 70px 20px 90px 20px;
   padding-block-end: 70px;
   background-color: #FFDDDD;
   font-family: 'Poppins', sans-serif;
   color: #636363; }
 
 #web {
-  padding: 70px 90px 90px 90px;
+  padding: 70px 20px 90px 20px;
   padding-block-end: 70px;
   background-color: white;
   font-family: 'Poppins', sans-serif;
   color: #636363; }
 
 #redes {
-  padding: 70px 90px 90px 90px;
+  padding: 70px 20px 90px 20px;
   padding-block-end: 70px;
   background-color: #FFDDDD;
   font-family: 'Poppins', sans-serif;
