@@ -35,24 +35,18 @@ $colorGris: #636363;
 /* header */
 .header{
     padding: 15px;
-    display: flex;
     background-image: url("../imagenes/fondoBanner.jpg");
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
 
     .header__logo{
         max-width: 50%;
-
     }
 
     .header__navbar{
         .navbar-nav{
             list-style: none;
-            display: flex;
             padding: 20px;
             color: $colorGris;
-            justify-content: space-between;
+            align-items: center !important;
 
             .nav-item{
                 padding: 10px;
@@ -64,19 +58,22 @@ $colorGris: #636363;
                     text-decoration: none;
                     font-family: 'Poppins', sans-serif;
                     color: #636363;
-                    &.active{
-                       color: #a00782;
-                }
                 }
             }
         }
     }
 }
-
 .active{
-    color: #a00782;
+    color: #a00782 !important;
 }
 
+.container-fluid{
+    justify-content: space-between !important;
+}
+
+.navbar-nav{
+    align-items: center !important;
+}
 
 
 /* banner_index*/
@@ -129,8 +126,7 @@ $colorGris: #636363;
 
     .bienvenida__imagen{
 
-        padding-block-end: 50px;
-       
+        padding-block-end: 20px;
     }
 
 
@@ -222,8 +218,6 @@ $colorGris: #636363;
         margin-bottom: 20px; 
     }
 }
-
-
 
 /* sobre mi */
 .sobreMiIntro{
@@ -362,10 +356,7 @@ $colorGris: #636363;
             text-decoration: underline;
             text-align: left;
         }
-
-
     }
-
     .datos__item3{
         align-items: initial;
         text-align: left;
@@ -425,7 +416,6 @@ $colorGris: #636363;
         padding: 15px;
     }
 }
-
 
 /* sevicios */
 
@@ -546,7 +536,6 @@ $colorGris: #636363;
     padding-top: 90px;
 }
 
-
 #grillaTrabajos{
     display: grid;
     grid-template-columns: 1fr 40% 40%;
@@ -561,10 +550,6 @@ $colorGris: #636363;
 
 #koahPortada{
     grid-area: koahPortada;
-}
-
-#koahPortada:hover{
-    transform: translate(1px,-15px);
 }
 
 .img{
@@ -614,20 +599,12 @@ $colorGris: #636363;
 
 
 /* Contacto*/
-
 .bannerContacto{
     padding: 40px;
     padding-top: 40px;
     height: 200px;
     background-color: #FFDDDD;
 }
-
-.contacto__intro{
-    padding: 70px;
-    font-family: 'Poppins', sans-serif;
-    width: 50%;
-}
-
 
 .contacto{
     display: flex;
@@ -675,34 +652,39 @@ $colorGris: #636363;
         border-color: #ab4493; 
         margin-top: 10px;  
         padding-left: 10px;
-        margin-bottom: 20px; 
+        margin-bottom: 10px; 
+        width: 400px;
       }
-      
       
       textarea{
         height: 150px; 
-        @extend input
-        
+        @extend input;
       }
-      
+
+      select{
+          margin-bottom: 20px;
+      }
       
       label{
         padding-top: 5px;
       }
+
+      button{
+        background-color: $colorMarron;
+        width: 100px;
+        border-color: $colorMarron;
+      }
 }
 
 
-
 /* Responsive*/
-
-
     /*extra small divices celulares*/
-    @media only screen and ( max-width:600px){
+@media only screen and ( max-width:600px){
         #grilla{
             display:grid;
             grid-template-columns: 100%;
             grid-template-areas: "header"
-                                  "nav"
+                                 "nav"
                                  "contenido"
                                  "footer";
         }
@@ -725,10 +707,134 @@ $colorGris: #636363;
                 grid-area: nav;
                 flex-direction: row;
             }
-   
+
+    .bienvenida{
+     padding: 30px; 
+    }       
+
+    .habilidades{
+    padding: 70px;
+    
+
+    .habilidades__titulos{
+        color: #a00782;
+        font-family: 'Oleo Script', cursive;
+        font-size: 28px;
+        text-align: center;
     }
 
+    }
 
+    .tabla{
+        .tabla__titulosTabla{
+            font-size: 27px;
+        }
+
+        .tabla__respuestasTabla{
+            font-size: 16px;
+            padding: 15px;
+        }
+    }
+
+    .habilidades{
+        padding: 10px;
+        
+
+        .habilidades__titulos{
+            font-size: 24px;
+        }
+
+    }
+
+    .tabla{
+        .tabla__titulosTabla{
+            font-size: 18px;
+        }
+
+        .tabla__respuestasTabla{
+            font-size: 12px;
+        }
+    }
+
+        .datos{
+            padding: 40px;
+            padding-top: 10px;
+
+            .datos__item1{
+                padding-top: 40px;
+                width: 500px;
+
+                .item1__titulos{
+                    font-size: 27px;
+                }
+
+                .item1__subtitulos{
+                    font-size: 16px;
+                }
+
+            }
+        }
+
+        .datos__item2{
+            align-items: initial;
+            display: inline-block;
+            text-align: left;
+            width: 300px;
+            
+            .item2__preguntas{
+                font-size: 15px;
+            }
+
+            .item2__respuestas{
+                font-size: 15px;
+            }
+        }
+        .datos__item3{
+            width: 300px;
+
+            .item3__preguntas{
+                font-size: 15px;
+            }
+
+            .item3__respuestas{
+                font-size: 15px;
+            }
+        }
+
+        .contacto{
+            padding: 0px;
+        
+        
+            input{
+                margin-top: 10px;  
+                width: 300px;
+              }
+              
+              textarea{
+                height: 80px; 
+              }
+
+              label{
+                  margin-top: 10px;
+              }
+        }
+
+        #grillaTrabajos{
+            display:grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 400px;
+            grid-template-areas: "koahPortada"
+                                 "koah"
+                                 "koah2"
+                                 "koah3"
+                                 "koah4";
+            column-gap: 20px;
+            row-gap: 20px; 
+            justify-items: center;         
+            padding: 20px;                         
+        }
+        
+}
 
     /*tablets*/ 
     @media only screen and (min-width:600px){
@@ -758,4 +864,36 @@ $colorGris: #636363;
                 background-color:$colorRosaDos;
             }
 
+            #grillaTrabajos{
+                display:grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 400px;
+                grid-template-areas: "koahPortada"
+                                     "koah"
+                                     "koah2"
+                                     "koah3"
+                                     "koah4";
+                column-gap: 20px;
+                row-gap: 20px; 
+                justify-items: center;         
+                padding: 40px;                         
+            }
+
     }
+
+        /*Pantallas panoramicas*/ 
+        @media only screen and (min-width:1200px){
+
+            #grillaTrabajos{
+                display: grid;
+                grid-template-columns: 1fr 40% 40%;
+                grid-template-rows: 200px 200px;
+                grid-template-areas: "koahPortada koah koah2"
+                                     "koahPortada koah3 koah4"; 
+                column-gap: 20px;
+                row-gap: 20px; 
+                justify-items: center;         
+                padding: 40px;                                         
+            }
+    
+        }

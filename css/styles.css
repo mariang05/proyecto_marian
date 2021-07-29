@@ -21,19 +21,14 @@
 /* header */
 .header {
   padding: 15px;
-  display: flex;
-  background-image: url("../imagenes/fondoBanner.jpg");
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex-direction: row; }
+  background-image: url("../imagenes/fondoBanner.jpg"); }
   .header .header__logo {
     max-width: 50%; }
   .header .header__navbar .navbar-nav {
     list-style: none;
-    display: flex;
     padding: 20px;
     color: #636363;
-    justify-content: space-between; }
+    align-items: center !important; }
     .header .header__navbar .navbar-nav .nav-item {
       padding: 10px;
       font-family: 'Poppins', sans-serif;
@@ -43,11 +38,15 @@
         text-decoration: none;
         font-family: 'Poppins', sans-serif;
         color: #636363; }
-        .header .header__navbar .navbar-nav .nav-item .nav-link.active {
-          color: #a00782; }
 
 .active {
-  color: #a00782; }
+  color: #a00782 !important; }
+
+.container-fluid {
+  justify-content: space-between !important; }
+
+.navbar-nav {
+  align-items: center !important; }
 
 /* banner_index*/
 .banner {
@@ -83,7 +82,7 @@
 .bienvenida {
   padding: 70px; }
   .bienvenida .bienvenida__imagen {
-    padding-block-end: 50px; }
+    padding-block-end: 20px; }
   .bienvenida .bienvenida__texto .texto__titulo {
     color: #a00782;
     font-size: 36px;
@@ -372,9 +371,6 @@
 #koahPortada {
   grid-area: koahPortada; }
 
-#koahPortada:hover {
-  transform: translate(1px, -15px); }
-
 .img {
   max-width: 100%; }
 
@@ -417,11 +413,6 @@
   height: 200px;
   background-color: #FFDDDD; }
 
-.contacto__intro {
-  padding: 70px;
-  font-family: 'Poppins', sans-serif;
-  width: 50%; }
-
 .contacto {
   display: flex;
   justify-content: space-around;
@@ -461,11 +452,18 @@
     border-color: #ab4493;
     margin-top: 10px;
     padding-left: 10px;
-    margin-bottom: 20px; }
+    margin-bottom: 10px;
+    width: 400px; }
   .contacto textarea {
     height: 150px; }
+  .contacto select {
+    margin-bottom: 20px; }
   .contacto label {
     padding-top: 5px; }
+  .contacto button {
+    background-color: #8e5f71;
+    width: 100px;
+    border-color: #8e5f71; }
 
 /* Responsive*/
 /*extra small divices celulares*/
@@ -485,7 +483,72 @@
     background-color: #D89CB2; }
   .nav__item {
     grid-area: nav;
-    flex-direction: row; } }
+    flex-direction: row; }
+  .bienvenida {
+    padding: 30px; }
+  .habilidades {
+    padding: 70px; }
+    .habilidades .habilidades__titulos {
+      color: #a00782;
+      font-family: 'Oleo Script', cursive;
+      font-size: 28px;
+      text-align: center; }
+  .tabla .tabla__titulosTabla {
+    font-size: 27px; }
+  .tabla .tabla__respuestasTabla {
+    font-size: 16px;
+    padding: 15px; }
+  .habilidades {
+    padding: 10px; }
+    .habilidades .habilidades__titulos {
+      font-size: 24px; }
+  .tabla .tabla__titulosTabla {
+    font-size: 18px; }
+  .tabla .tabla__respuestasTabla {
+    font-size: 12px; }
+  .datos {
+    padding: 40px;
+    padding-top: 10px; }
+    .datos .datos__item1 {
+      padding-top: 40px;
+      width: 500px; }
+      .datos .datos__item1 .item1__titulos {
+        font-size: 27px; }
+      .datos .datos__item1 .item1__subtitulos {
+        font-size: 16px; }
+  .datos__item2 {
+    align-items: initial;
+    display: inline-block;
+    text-align: left;
+    width: 300px; }
+    .datos__item2 .item2__preguntas {
+      font-size: 15px; }
+    .datos__item2 .item2__respuestas {
+      font-size: 15px; }
+  .datos__item3 {
+    width: 300px; }
+    .datos__item3 .item3__preguntas {
+      font-size: 15px; }
+    .datos__item3 .item3__respuestas {
+      font-size: 15px; }
+  .contacto {
+    padding: 0px; }
+    .contacto input, .contacto textarea {
+      margin-top: 10px;
+      width: 300px; }
+    .contacto textarea {
+      height: 80px; }
+    .contacto label {
+      margin-top: 10px; }
+  #grillaTrabajos {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 400px;
+    grid-template-areas: "koahPortada" "koah" "koah2" "koah3" "koah4";
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-items: center;
+    padding: 20px; } }
 
 /*tablets*/
 @media only screen and (min-width: 600px) {
@@ -500,4 +563,25 @@
     grid-area: contenido; }
   .footer {
     grid-area: footer;
-    background-color: #D89CB2; } }
+    background-color: #D89CB2; }
+  #grillaTrabajos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px;
+    grid-template-areas: "koahPortada" "koah" "koah2" "koah3" "koah4";
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-items: center;
+    padding: 40px; } }
+
+/*Pantallas panoramicas*/
+@media only screen and (min-width: 1200px) {
+  #grillaTrabajos {
+    display: grid;
+    grid-template-columns: 1fr 40% 40%;
+    grid-template-rows: 200px 200px;
+    grid-template-areas: "koahPortada koah koah2" "koahPortada koah3 koah4";
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-items: center;
+    padding: 40px; } }
